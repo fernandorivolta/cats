@@ -9,7 +9,7 @@ col_categories = mydb["categories"]
 headers = {'x-api-key': '968f68ea-0fac-43f8-825a-99fed57586ed'}
 
 def get_category_id(categories):
-    """ Recebe uma lista de categorias e retorna uma lista dos ids dessas categorias """
+    # Recebe uma lista de categorias e retorna uma lista dos ids dessas categorias
     categories_id = []
     res = requests.get('https://api.thecatapi.com/v1/categories', headers=headers)
     for x in res.json():
@@ -26,7 +26,7 @@ for _cat in res.json():
     for img in img_res.json():
         imgs.append(img['url'])
 
-    cat = {'breech' : _cat['name'], 'origin' : _cat['origin'], 'temperament' : _cat['temperament'], 'description' : _cat['description'], 'imgs' : imgs}
+    cat = {'breed' : _cat['name'], 'origin' : _cat['origin'], 'temperament' : _cat['temperament'].split(', '), 'description' : _cat['description'], 'imgs' : imgs}
     col_breeds.insert_one(cat) 
 
 for _id in get_category_id(['sunglasses', 'hats']):

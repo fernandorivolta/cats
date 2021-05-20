@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "5c5c31fb-4118-407f-84e4-419c801ced99",
+		"name": "Cats",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API capaz de listar todas as raças",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/breeds",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"breeds"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API capaz de listar as informações de uma raça",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/breed/Abyssinian",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"breed",
+						"Abyssinian"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API capaz de a partir de um temperamento listar as raças",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/breeds/temperament/Affectionate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"breeds",
+						"temperament",
+						"Affectionate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API capaz de a partir de uma origem listar as raças",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/breeds/origin/Canada",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"breeds",
+						"origin",
+						"Canada"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
