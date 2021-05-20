@@ -5,7 +5,7 @@ Documentação do projeto
 
 Documentação da API
 -------------------
-
+![Imagem da documentação da API](imgs/apis.png)
 
 Instalação
 ----------
