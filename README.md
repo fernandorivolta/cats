@@ -14,3 +14,7 @@ Instalação
 ```
 docker compose up -d
 ```
+
+Dashboard
+---------
+![Imagem das Dashboards](imgs/grafana.png)
