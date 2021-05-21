@@ -4,13 +4,13 @@ Documentação do projeto
 -----------------------
 ![Imagem da arquitetura](imgs/diagrama.png)
 
-<br>
+
 Documentação da API
 -------------------
 ![Imagem da documentação da API](imgs/apis.png)
 _importar as collections do postman para testar as APIs_
 
-<br>
+
 Instalação
 ----------
 - Instale o docker e o docker-compose
@@ -19,7 +19,7 @@ Instalação
 docker compose up -d
 ```
 
-<br>
+
 Dashboard
 ---------
 ![Imagem das Dashboards](imgs/grafana.png)
