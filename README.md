@@ -8,6 +8,7 @@ Documentação do projeto
 Documentação da API
 -------------------
 ![Imagem da documentação da API](imgs/apis.png)
+
 _importar as collections do postman para testar as APIs_
 
 
