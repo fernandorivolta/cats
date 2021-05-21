@@ -18,6 +18,7 @@ Instalação
 ```
 docker compose up -d
 ```
+
 <br>
 Dashboard
 ---------
