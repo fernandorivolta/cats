@@ -19,7 +19,17 @@ Instalação
 ```
 docker compose up -d
 ```
+- Caso ocorra o seguinte erro:
+```
+ => ERROR [prometheus 1/1] FROM docker.io/prom/prometheus:v2.2
+ > [prometheus 1/1] FROM docker.io/prom/prometheus:v2.2.1
+failed to solve: rpc error: code = Unknown desc = failed to load cache key: invalid empty config file resolved for docker.io/prom/prometheus:v2.2
+```
 
+- Rode o seguinte comando e tente novamente
+```
+docker pull prom/prometheus:v2.2.1
+```
 
 Dashboard
 ---------
