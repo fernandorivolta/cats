@@ -2,12 +2,26 @@ from flask import Flask
 from prometheus_flask_exporter import PrometheusMetrics
 import pymongo
 from bson.json_util import dumps
+import seqlog
+import logging
 
+seqlog.log_to_seq(
+   server_url="http://logseq:5341/",
+   api_key="lqgQBAYsq5Cw5dyrzc0b",
+   level=logging.NOTSET,
+   batch_size=10,
+   auto_flush_timeout=1,  # seconds
+   override_root_logger=True
+)
 app = Flask(__name__)
 metrics = PrometheusMetrics(app)
 client = pymongo.MongoClient("mongodb://mongo:27017/")
 mydb = client["db"]
 col_breeds = mydb["breeds"]
+
+@app.route('/error')
+def error():
+    raise ValueError('Teste de erro para o logseq')
 
 @app.route('/breeds')
 def breeds():

@@ -2,3 +2,4 @@ requests
 prometheus_flask_exporter 
 flask
 pymongo
+seqlog

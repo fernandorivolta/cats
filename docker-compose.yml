@@ -46,3 +46,10 @@ services:
     ports:
       - 3000:3000
 
+  logseq:
+    image: datalust/seq:5.1
+    environment:
+      - ACCEPT_EULA=Y
+    ports:
+      - 2000:80
+      - 4000:5341

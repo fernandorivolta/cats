@@ -33,5 +33,7 @@ docker pull prom/prometheus:v2.2.1
 
 Dashboard
 ---------
-![Imagem das Dashboards](imgs/grafana.png)
+![Imagem do Grafana](imgs/grafana.png)
 _clique na imagem para aumentar_
+![Imagem do seq](imgs/log.png)
+![Imagem do grafana error](imgs/grafana500.png)
