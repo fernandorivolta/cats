@@ -30,7 +30,7 @@ services:
       - "mongo"
 
   prometheus:
-    image: prom/prometheus:v2.2.1
+    image: prom/prometheus
     volumes:
       - ./prometheus/config.yml:/etc/prometheus/prometheus.yml
     ports:
