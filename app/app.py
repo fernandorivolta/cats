@@ -31,7 +31,6 @@ def breeds():
 
 @app.route('/breed/<filter>')
 def breed(filter):
-    print(filter)
     return dumps(col_breeds.find_one({'breed' : filter}, {'_id': False}))
 
 @app.route('/breeds/temperament/<filter>')

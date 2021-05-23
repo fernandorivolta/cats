@@ -6,9 +6,9 @@ Documentação do projeto
 
 - Para consumir e guardar as informações do TheCatAPI, foi utilizado a stack Python + mongoDB.
 
-- Para a monitoria de performance da API, foi utilizado o Grafana e Prometheus com uma lib do python chamada prometheus_flask_exporter. A lib expoe um endpoint (/metrics) na API, que é consumido pelo prometheus. Dessa forma o Grafana cria os gráficos baseado nessas informações gravadas no prometheus.
+- Para a monitoria de performance da API, foi utilizado o Grafana e Prometheus com uma lib do python chamada prometheus_flask_exporter. A lib expoe um endpoint (/metrics) na API, que é consumido pelo prometheus. Dessa forma o Grafana cria os gráficos baseado nessas informações gravadas no prometheus.  (http://localhost:3000 - grafana)
 
-- Para a monitoria dos logs da API, foi utilizado o LogSeq com a lib seqlog que envia informações da API para o LogSeq. 
+- Para a monitoria dos logs da API, foi utilizado o LogSeq com a lib seqlog que envia informações da API para o LogSeq. (http://localhost:2000  - logseq)
 
 ![Imagem da arquitetura](imgs/diagrama.png)
 
