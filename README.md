@@ -9,6 +9,7 @@ Documentação do projeto
 - Para a monitoria de performance da API, foi utilizado o Grafana e Prometheus com uma lib do python chamada prometheus_flask_exporter. A lib expoe um endpoint (/metrics) na API, que é consumido pelo prometheus. Dessa forma o Grafana cria os gráficos baseado nessas informações gravadas no prometheus.
 
 - Para a monitoria dos logs da API, foi utilizado o LogSeq com a lib seqlog que envia informações da API para o LogSeq. 
+
 ![Imagem da arquitetura](imgs/diagrama.png)
 
 
